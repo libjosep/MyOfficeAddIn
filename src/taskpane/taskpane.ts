@@ -39,6 +39,7 @@ export async function run() {
                 }
                 range.format.fill.color = color;
                 await context.sync();
+                dialog.close();
               });
             } catch (error) {
               console.error(error);
